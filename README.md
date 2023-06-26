@@ -1,3 +1,5 @@
 # scripts
 
-HOSTNAME UNASSIGNED: sudo bash <(curl -Ls https://t.ly/641X5)
+RUN ALL SCRIPTS FROM ROOT
+
+HOSTNAME UNASSIGNED: sudo bash <(curl -Ls https://github.com/scriptsbu/scripts/raw/main/host.sh)
