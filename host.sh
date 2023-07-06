@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo chmod 777 /etc/hosts
-rm /etc/hosts
+sudo rm /etc/hosts
 echo "127.0.0.1       localhost" | sudo tee -a /etc/hosts
 echo "127.0.1.1       $HOSTNAME" | sudo tee -a /etc/hosts
 echo "" | sudo tee -a /etc/hosts
