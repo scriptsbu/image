@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 sudo chmod 777 /etc/hosts
 sudo rm /etc/hosts
 echo "127.0.0.1       localhost" | sudo tee -a /etc/hosts
