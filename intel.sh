@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt update && apt upgrade -y
+sudo apt update && apt full-upgrade -y
 sudo apt install -y gpg-agent wget
 wget -qO - https://repositories.intel.com/graphics/intel-graphics.key |
   sudo apt-key add -
