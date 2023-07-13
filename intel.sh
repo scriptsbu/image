@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su
 sudo -i
 sudo apt update && apt full-upgrade -y
 sudo apt install -y gpg-agent wget
