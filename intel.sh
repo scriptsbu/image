@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo mv /var/lib/apt/lists{,july12}
+sudo mv /var/lib/apt/lists{,july12} -f
 sudo apt-get update && apt-get full-upgrade -y
 sudo apt install -y gpg-agent wget
 wget -qO - https://repositories.intel.com/graphics/intel-graphics.key |
