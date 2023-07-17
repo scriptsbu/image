@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo -i
 sudo apt update
 sudo apt full-upgrade -y
 echo "Enabling BLUETOOTH"
