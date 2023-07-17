@@ -19,14 +19,14 @@ sudo ls mod | grep snd_hda_intel
 echo "CHECKING FOR DRIVER IN USE"
 sudo lspci -nnk | grep -A2 Audio
 echo "ALSA BASE RE-INSTALL"
-sudo alsa force-reload
 sudo apt-get remove --purge alsa-base pulseaudio
 sudo apt-get install alsa-base pulseaudio
 echo "EDITING ALSA-BASE"
 echo "options snd-hda-intel model=generic" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 echo "options snd-hda-intel model=auto" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-base.conf
-sudo apt update && sudo apt full-upgrade -y
+sudo alsa force-reload
+sudo apt-get update
 while true;do
  
 
