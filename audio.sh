@@ -18,14 +18,13 @@ echo "CHECKING FOR SND_HDA_INTEL MODULE"
 sudo ls mod | grep snd_hda_intel
 echo "CHECKING FOR DRIVER IN USE"
 sudo lspci -nnk | grep -A2 Audio
-echo "ALSA BASE RE-INSTALL"
-sudo apt-get remove --purge alsa-base pulseaudio
-sudo apt-get install alsa-base pulseaudio
 echo "EDITING ALSA-BASE"
 echo "options snd-hda-intel model=generic" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 echo "options snd-hda-intel model=auto" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 sudo alsa force-reload
+sudo apt-get install pulseaudio-module-bluetooth
+pactl load-module module-bluetooth-discover
 sudo apt-get update
 while true;do
  
