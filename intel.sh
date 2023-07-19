@@ -12,6 +12,7 @@ sudo apt install \
   intel-media-va-driver-non-free libmfx1
 sudo apt install mesa-utils
 glxinfo -B
+sudo apt-get update && apt-get upgrade -f -y
   while true;do
  
 
