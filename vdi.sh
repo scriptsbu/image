@@ -9,7 +9,7 @@ echo "CREATING SYMLINK"
 echo "INSTALLING INTEL MEDIA DRIVER"
 sudo apt-get install intel-media-va-driver-non-free
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -f -y
 while true;do
  
 
