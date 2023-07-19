@@ -25,7 +25,7 @@ echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-ba
 sudo alsa force-reload
 sudo apt-get install pulseaudio-module-bluetooth
 pactl load-module module-bluetooth-discover
-sudo apt-get update
+sudo apt-get update && apt-get upgrade -f -y
 while true;do
  
 
