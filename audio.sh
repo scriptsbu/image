@@ -19,7 +19,6 @@ sudo ls mod | grep snd_hda_intel
 echo "CHECKING FOR DRIVER IN USE"
 sudo lspci -nnk | grep -A2 Audio
 echo "EDITING ALSA-BASE"
-echo "options snd-hda-intel model=generic" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 echo "options snd-hda-intel model=auto" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 sudo alsa force-reload
