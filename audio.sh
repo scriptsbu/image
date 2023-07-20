@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sudo apt full-upgrade -y
+sudo apt upgrade -y
 echo "Enabling BLUETOOTH"
 sudo service bluetooth enable
 sudo service bluetooth start
