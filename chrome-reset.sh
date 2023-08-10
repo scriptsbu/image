@@ -13,8 +13,6 @@ sudo pkill --oldest chrome -f
 sudo rm -r /opt/google/chrome -f
 sudo apt remove google-chrome-stable -f -y
 sudo apt purge google-chrome-stable -f -y
-sudo snap install chromium
-chromium
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 google-chrome
