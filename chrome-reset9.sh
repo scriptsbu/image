@@ -5,7 +5,7 @@ echo -e "\x1b[41;37mATTENTION! PRESS [ENTER] KEY TO OPEN CHROME AND MANUALLY BAC
 echo -e "\x1b[41;37mchromium chrome://password-manager/settings\x1b[K\x1b[0m"
 echo -e "\x1b[41;37mchromium chrome://bookmarks\x1b[K\x1b[0m"
 read -p ""
-chrome://bookmarks
+google-chrome
 #============================================================================
 echo -e "\x1b[41;37mATTENTION! YOU ARE ABOUT TO LOSE ALL YOUR CHROME DATA(PASSWORD, BOOKMARKS,ETC.) - PRESS [ENTER] KEY TO PROCEED.\x1b[K\x1b[0m"
 read -p ""
