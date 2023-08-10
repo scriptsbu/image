@@ -5,6 +5,7 @@ cd ~/Downloads
 #===========================PASSWORDS=====================================
 wget https://github.com/scriptsbu/iso_fix/raw/main/storage/retrieve_password.py
 python3 retrieve_password.py
+cat passwords.csv
 #===========================BOOKMARKS=====================================
 googlechromebookmarks() {
   cat ~/.config/google-chrome/Default/Bookmarks | \
