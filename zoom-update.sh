@@ -1,5 +1,6 @@
 #!/bin/bash
 cd Downloads
+sudo rm -r  zoom_amd64.deb -f
 sudo apt update -y
 sudo pkill zoom -f
 sudo pkill zoom-client -f
