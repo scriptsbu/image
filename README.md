@@ -11,3 +11,5 @@ VDI BLACK SCREEN FIX: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/m
 Wifi-Restart: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/wifi-restart.sh)
 
 Zoom-Update: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/zoom-update.sh)
+
+Slack-update: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/slack-update.sh)
