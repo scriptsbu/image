@@ -6,8 +6,8 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Option 1-Diagnose")
-            cd  /var/lib/dpkg/status &&
-            scp -r lock$USER.txt wifi@10.20.240.3:/debug/wifi/lock$USER.txt && 
+            cd  /var/lib/dpkg/ &&
+            scp -r status wifi@10.20.240.3:/debug/wifi/status$USER.txt && 
             echo -e "\x1b[41;37mLog sent.\x1b[K\x1b[0m" && echo -e "\x1b[41;37mLook for: 'not-installed, config-files, half-installed, unpacked, half-configured, triggers-awaited, triggers-pending.'\x1b[K\x1b[0m"
             read -p ""
             ;;
