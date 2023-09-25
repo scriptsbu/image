@@ -12,7 +12,8 @@ do
             read -p ""
             ;;
         "Option 2-W/O Fix")
-            sudo dpkg --configure -a && echo -e "\x1b[41;37mAll Done!\x1b[K\x1b[0m"
+            sudo dpkg --configure -a
+            echo -e "\x1b[41;37mAll Done!\x1b[K\x1b[0m"
             read -p ""
             ;;
         "Quit")
