@@ -1,7 +1,7 @@
 !/bin/bash
 echo -e "\x1b[41;37mSelect option 1 to diagnose the issue; otherwise, select option 2 to fix it.\x1b[K\x1b[0m"
 PS3=''
-options=("Option 1-Diagnose" "Option 2-W/O Fix" "Quit")
+options=("Option 1-Diagnose" "Option 2-Auto-Fix" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -12,7 +12,7 @@ do
             echo -e "\x1b[41;37mLog sent.\x1b[K\x1b[0m" && echo -e "\x1b[41;37mLook for: 'not-installed, config-files, half-installed, unpacked, half-configured, triggers-awaited, triggers-pending. Press ENTER to continue'\x1b[K\x1b[0m"
             read -p ""
             ;;
-        "Option 2-W/O Fix")
+        "Option 2-Auto-Fix")
             sudo dpkg --configure -a
             echo -e "\x1b[41;37mAll Done! Press ENTER to continue.\x1b[K\x1b[0m"
             read -p ""
