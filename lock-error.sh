@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 echo -e "\x1b[41;37mSelect option 1 to diagnose the issue; otherwise, select option 2 to fix it.\x1b[K\x1b[0m"
 PS3=''
 options=("Option 1-Diagnose" "Option 2-Manual-Fix" "Quit")
