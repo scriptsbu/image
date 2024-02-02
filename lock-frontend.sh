@@ -1,7 +1,7 @@
 !/bin/bash
 echo -e "\x1b[41;37mSelect option 1 to diagnose the issue; otherwise, select option 2 to fix it.\x1b[K\x1b[0m"
 PS3=''
-options=("Option 1-Diagnose" "Option 2-Fix" "Quit")
+options=("Option 1-Diagnose" "Option 2-W/O Fix" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
