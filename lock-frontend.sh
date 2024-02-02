@@ -7,13 +7,14 @@ do
     case $opt in
         "Option 1-Diagnose")
             cd  /var/lib/dpkg/ &&
+            echo -e "\x1b[41;37mAsk IT for the password.\x1b[K\x1b[0m"
             scp -r status wifi@10.20.240.3:/debug/wifi/status$USER.txt && 
-            echo -e "\x1b[41;37mLog sent.\x1b[K\x1b[0m" && echo -e "\x1b[41;37mLook for: 'not-installed, config-files, half-installed, unpacked, half-configured, triggers-awaited, triggers-pending.'\x1b[K\x1b[0m"
+            echo -e "\x1b[41;37mLog sent.\x1b[K\x1b[0m" && echo -e "\x1b[41;37mLook for: 'not-installed, config-files, half-installed, unpacked, half-configured, triggers-awaited, triggers-pending. Press ENTER to continue'\x1b[K\x1b[0m"
             read -p ""
             ;;
         "Option 2-W/O Fix")
             sudo dpkg --configure -a
-            echo -e "\x1b[41;37mAll Done!\x1b[K\x1b[0m"
+            echo -e "\x1b[41;37mAll Done! Press ENTER to continue.\x1b[K\x1b[0m"
             read -p ""
             ;;
         "Quit")
