@@ -28,7 +28,9 @@ sudo apt-get update && sudo apt-get upgrade -f -y
 #systemctl --user unmask pulseaudio
 #^^^ this command may slow down the distro
 #====RE-ENABLING PIPEWIRE IF INSTALLED====IF app installed, then do this if not then reboot....
+echo "HERE 1"
    if ! [ -x "$(command pipewire)" ]; then 
+      echo "HERE 2"
         echo "Pipewire not found"
       systemctl --user --now enable pulseaudio.service pulseaudio.socket &
         while true;do
@@ -52,7 +54,7 @@ done
         # below code only runs if command exists
 #systemctl --user unmask pipewire
 #^^^ this command may slow down the distro
-pause
+echo "HERE 3"
 systemctl --user --now disable pulseaudio.service pulseaudio.socket &
 systemctl --user --now enable pipewire{,-pulse}.{socket,service} &
 #=========================================
