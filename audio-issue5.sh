@@ -7,6 +7,7 @@ sudo apt install pipewire-audio-client-libraries -y -f
 systemctl --user daemon-reload
 systemctl --user --now disable pulseaudio.service pulseaudio.socket
 #systemctl --user mask pulseaudio
+#^^^ this command may slow down the distro
 systemctl --user --now enable pipewire-media-session.service
 pactl info
 systemctl --user restart pipewire 
