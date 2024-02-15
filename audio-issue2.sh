@@ -2,8 +2,8 @@
 sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream -y
 sudo apt update
 sudo apt install pipewire -y -f
-sudo apt install libspa-0.2-bluetooth
-sudo apt install pipewire-audio-client-libraries
+sudo apt install libspa-0.2-bluetooth -y -f
+sudo apt install pipewire-audio-client-libraries -y -f
 systemctl --user daemon-reload
 systemctl --user --now disable pulseaudio.service pulseaudio.socket
 systemctl --user mask pulseaudio
