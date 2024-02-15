@@ -24,10 +24,10 @@ echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-ba
 sudo alsa force-reload
 sudo apt-get install pulseaudio-module-bluetooth
 pactl load-module module-bluetooth-discover
-sudo apt-get update && apt-get upgrade -f -y
+sudo apt-get update && sudo apt-get upgrade -f -y
 systemctl --user unmask pulseaudio
 systemctl --user --now enable pulseaudio.service pulseaudio.socket
-#====RE-ENABLING PIPEWIRE IF INSTALLED====
+#====RE-ENABLING PIPEWIRE IF INSTALLED====IF app installed, then do this if not then reboot....
    if ! [ -x "$(command pipewire)" ]; then 
         echo "Pipewire not found"
         while true;do
