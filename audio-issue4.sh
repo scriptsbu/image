@@ -6,7 +6,7 @@ sudo apt install libspa-0.2-bluetooth -y -f
 sudo apt install pipewire-audio-client-libraries -y -f
 systemctl --user daemon-reload
 systemctl --user --now disable pulseaudio.service pulseaudio.socket
-systemctl --user mask pulseaudio
+#systemctl --user mask pulseaudio
 systemctl --user --now enable pipewire-media-session.service
 pactl info
 systemctl --user restart pipewire 
