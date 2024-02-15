@@ -30,6 +30,23 @@ systemctl --user --now enable pulseaudio.service pulseaudio.socket
 #====RE-ENABLING PIPEWIRE IF INSTALLED====
    if ! [ -x "$(command pipewire)" ]; then 
         echo "Pipewire not found"
+        while true;do
+ 
+
+  read -p "Do you want to reboot now(Y/N)? " QUESTION
+  
+  case "${QUESTION}" in
+    [Yy] ) 
+      echo "Rebooting now..."    
+       sudo reboot  
+      ;;
+
+    * ) 
+      echo "Don't forget to Reboot the system to apply changes!"
+      exit
+      ;;
+  esac
+done
    fi
         # below code only runs if command exists
 systemctl --user unmask pipewire
