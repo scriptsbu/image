@@ -9,5 +9,7 @@ sudo snap remove zoom-client -f
 wget https://us05web.zoom.us/client/latest/zoom_amd64.deb
 sudo dpkg -i zoom_amd64.deb
 sudo rm -r  zoom_amd64.deb
+sudo dpkg --configure -a
+sudo apt-get update && sudo apt-get upgrade -y
 dpkg -l | grep zoom
 zoom
