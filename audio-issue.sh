@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo add-apt-r-epository ppa:pipewire-debian/pipewire-upstream -y -f
+sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream -y -f
 sudo apt update
 sudo apt install pipewire -y -f
 sudo apt install libspa-0.2-bluetooth
