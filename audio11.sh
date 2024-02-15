@@ -56,8 +56,8 @@ done
 #systemctl --user unmask pipewire
 #^^^ this command may slow down the distro
 echo "HERE 3"
-hash systemctl --user --now disable pulseaudio.service pulseaudio.socket &
-hash systemctl --user --now enable pipewire{,-pulse}.{socket,service} &
+systemctl --user --now disable pulseaudio.service pulseaudio.socket &
+systemctl --user --now enable pipewire{,-pulse}.{socket,service} &
 #=========================================
 while true;do
  
