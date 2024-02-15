@@ -25,6 +25,7 @@ sudo alsa force-reload
 sudo apt-get install pulseaudio-module-bluetooth
 pactl load-module module-bluetooth-discover
 sudo apt-get update && sudo apt-get upgrade -f -y
+pause
 #systemctl --user unmask pulseaudio
 #^^^ this command may slow down the distro
 #====RE-ENABLING PIPEWIRE IF INSTALLED====IF app installed, then do this if not then reboot....
