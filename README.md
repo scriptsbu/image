@@ -1,5 +1,5 @@
 INSTALL:
-
+===============
 
 BLUETOOTH AUDIO FIX: bash <(curl -Ls https://github.com/scriptsbu/scripts/raw/main/audio.sh)
 
