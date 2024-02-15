@@ -25,7 +25,13 @@ sudo alsa force-reload
 sudo apt-get install pulseaudio-module-bluetooth
 pactl load-module module-bluetooth-discover
 sudo apt-get update && apt-get upgrade -f -y
+systemctl --user unmask pulseaudio
+systemctl --user --now enable pulseaudio.service pulseaudio.socket
 #====RE-ENABLING PIPEWIRE IF INSTALLED====
+   if ! [ -x "$(command dpkg -l | grep pipewire)" ]; then 
+        echo "Pipewire not found"
+   fi
+        # below code only runs if command exists
 systemctl --user unmask pipewire
 systemctl --user --now disable pulseaudio.service pulseaudio.socket
 systemctl --user --now enable pipewire{,-pulse}.{socket,service}    
