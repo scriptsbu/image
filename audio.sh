@@ -26,6 +26,7 @@ sudo apt-get install pulseaudio-module-bluetooth
 pactl load-module module-bluetooth-discover
 sudo apt-get update && sudo apt-get upgrade -f -y
 #systemctl --user unmask pulseaudio
+#^^^ this command may slow down the distro
 systemctl --user --now enable pulseaudio.service pulseaudio.socket
 #====RE-ENABLING PIPEWIRE IF INSTALLED====IF app installed, then do this if not then reboot....
    if ! [ -x "$(command pipewire)" ]; then 
@@ -50,6 +51,7 @@ done
    fi
         # below code only runs if command exists
 #systemctl --user unmask pipewire
+#^^^ this command may slow down the distro
 systemctl --user --now disable pulseaudio.service pulseaudio.socket
 systemctl --user --now enable pipewire{,-pulse}.{socket,service}    
 #=========================================
