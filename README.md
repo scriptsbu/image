@@ -2,6 +2,8 @@ INSTALL:
 
 BLUETOOTH AUDIO FIX: bash <(curl -Ls https://github.com/scriptsbu/scripts/raw/main/audio.sh)
 
+Audio Issue - Pipewire install: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/audio-issue.sh)
+
 HOSTNAME UNASSIGNED FIX: bash <(curl -Ls https://github.com/scriptsbu/scripts/raw/main/host.sh)
 
 INTEL DRIVER GRAPHICS: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/intel.sh)
