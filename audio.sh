@@ -28,7 +28,7 @@ sudo apt-get update && apt-get upgrade -f -y
 systemctl --user unmask pulseaudio
 systemctl --user --now enable pulseaudio.service pulseaudio.socket
 #====RE-ENABLING PIPEWIRE IF INSTALLED====
-   if ! [ -x "$(command dpkg -l | grep pipewire)" ]; then 
+   if ! [ -x "$(command pipewire)" ]; then 
         echo "Pipewire not found"
    fi
         # below code only runs if command exists
