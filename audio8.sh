@@ -52,6 +52,7 @@ done
         # below code only runs if command exists
 #systemctl --user unmask pipewire
 #^^^ this command may slow down the distro
+pause
 systemctl --user --now disable pulseaudio.service pulseaudio.socket &
 systemctl --user --now enable pipewire{,-pulse}.{socket,service} &
 #=========================================
