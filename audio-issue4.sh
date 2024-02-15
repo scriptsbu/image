@@ -12,4 +12,24 @@ pactl info
 systemctl --user restart pipewire 
 sudo apt remove ofono -y -f
 sudo apt remove ofono-phonesim -y -f
+sudo apt update -y -f
+sudo apt upgrade -y -f
+sudo apt autoremove -y -f
 echo "Done!"
+while true;do
+ 
+
+  read -p "Do you want to reboot now(Y/N)? " QUESTION
+  
+  case "${QUESTION}" in
+    [Yy] ) 
+      echo "Rebooting now..."    
+       sudo reboot  
+      ;;
+
+    * ) 
+      echo "Don't forget to Reboot the system to apply changes!"
+      exit
+      ;;
+  esac
+done
