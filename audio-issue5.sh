@@ -5,10 +5,10 @@ sudo apt install pipewire -y -f
 sudo apt install libspa-0.2-bluetooth -y -f
 sudo apt install pipewire-audio-client-libraries -y -f
 systemctl --user daemon-reload
-systemctl --user --now disable pulseaudio.service pulseaudio.socket
+systemctl --user --now disable pulseaudio.service pulseaudio.socket &
 #systemctl --user mask pulseaudio
 #^^^ this command may slow down the distro
-systemctl --user --now enable pipewire-media-session.service
+systemctl --user --now enable pipewire-media-session.service &
 pactl info
 systemctl --user restart pipewire 
 sudo apt remove ofono -y -f
