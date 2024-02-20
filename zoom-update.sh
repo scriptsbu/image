@@ -1,5 +1,7 @@
 #!/bin/bash
 cd Downloads
+sudo apt-get purge zoom -f
+sudo apt-get purge zoom-client -f
 sudo rm -r  zoom_amd64.deb -f
 sudo apt update -y
 sudo pkill zoom -f
