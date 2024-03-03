@@ -19,4 +19,4 @@ Slack-update: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/slac
 
 Lock-file-manual: bash <(curl -Ls  https://github.com/scriptsbu/iso_fix/raw/main/lock-file-manual.sh)
 
-Lock-file-fix: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/lock-file-fix.sh)
+Lock-file-fix: bash <(curl -Ls  https://github.com/scriptsbu/iso_fix/raw/main/lock-file-fix.sh)
