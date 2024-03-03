@@ -6,6 +6,8 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Option 1-Diagnose")
+            sudo lsof /var/lib/dpkg/lock-frontend
+            read p "PRESS ENTER TO CONTINUE"
             sudo cp  /var/lib/dpkg/status /home/$USER/Desktop
             sudo nautilus /home/$USER/Desktop
             echo -e "\x1b[41;37mSend log to IT thru Slack.\x1b[K\x1b[0m" && echo -e "\x1b[41;37mLook for: 'not-installed, config-files, half-installed, unpacked, half-configured, triggers-awaited, triggers-pending. Press ENTER to continue.'\x1b[K\x1b[0m"
