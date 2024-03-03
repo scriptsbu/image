@@ -17,6 +17,6 @@ Zoom-Update: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/zoom-
 
 Slack-update: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/slack-update.sh)
 
-Lock-error: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/lock-error.sh)
+Lock-file-manual: bash <(curl -Ls  https://github.com/scriptsbu/iso_fix/raw/main/lock-file-manual.sh)
 
-Lock-directory-remove: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/lock-fix.sh)
+Lock-file-fix: bash <(curl -Ls https://github.com/scriptsbu/iso_fix/raw/main/lock-file-fix.sh)
