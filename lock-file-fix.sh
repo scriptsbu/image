@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sudo apt clean
 sudo rm /var/lib/dpkg/lock
 sudo rm /var/lib/apt/lists/lock
