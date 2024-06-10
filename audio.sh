@@ -27,9 +27,9 @@ pactl load-module module-bluetooth-discover
 sudo apt-get update && sudo apt-get upgrade -f -y
 sudo apt install pavucontrol
 sudo cp /etc/bluetooth/main.conf /etc/bluetooth/main.bak
-#Change #ControllerMode = dual to ControllerMode = bredr
-#sudo nano /etc/bluetooth/main.conf
-Then sudo systemctl restart bluetooth.service
+echo "Change #ControllerMode = dual to ControllerMode = bredr"
+echo "sudo nano /etc/bluetooth/main.conf"
+sudo systemctl restart bluetooth.service
 #systemctl --user unmask pulseaudio
 #^^^ this command may slow down the distro
 #====RE-ENABLING PIPEWIRE IF INSTALLED====IF app installed, then do this if not then reboot....
